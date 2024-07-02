@@ -2,7 +2,20 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          black: "#0A0A0A",
+          text: "#EEE5E0",
+        },
+      },
+    },
+    fontFamily: {
+      RedHat: ["Red Hat Display", "sans-serif"],
+      LeagueGothic: ["League Gothic", "sans-serif"],
+      LeagueSpartan: ["League Spartan", "sans-serif"],
+      ShadowsIntoLight: ["Shadows Into Light", "cursive"],
+    },
   },
   plugins: [],
 };

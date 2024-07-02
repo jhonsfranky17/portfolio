@@ -501,25 +501,45 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.text-5xl {
-  font-size: 3rem;
+.flex {
+  display: flex;
+}
+.min-h-dvh {
+  min-height: 100dvh;
+}
+.w-full {
+  width: 100%;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.bg-primary-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 10 10 / var(--tw-bg-opacity));
+}
+.font-ShadowsIntoLight {
+  font-family: Shadows Into Light, cursive;
+}
+.font-LeagueGothic {
+  font-family: League Gothic, sans-serif;
+}
+.text-9xl {
+  font-size: 8rem;
   line-height: 1;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-\[15rem\] {
+  font-size: 15rem;
 }
 .font-extrabold {
   font-weight: 800;
 }
-.text-orange-500 {
-  --tw-text-opacity: 1;
-  color: rgb(249 115 22 / var(--tw-text-opacity));
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
-.text-green-400 {
+.text-primary-text {
   --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity));
-}
-.underline {
-  text-decoration-line: underline;
+  color: rgb(238 229 224 / var(--tw-text-opacity));
 }

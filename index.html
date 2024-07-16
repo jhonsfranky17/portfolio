@@ -28,7 +28,7 @@
   <body>
     <!-- Wrapper -->
     <div
-      class="min-h-dvh w-full bg-primary-black text-primary-text font-RedHat flex flex-col px-20"
+      class="min-h-dvh w-full bg-primary-black text-primary-text font-RedHat flex flex-col px-20 items-center"
     >
       <!-- NavBar + Navtags -->
       <div class="flex flex-col w-full">
@@ -103,8 +103,8 @@
         </h1>
         <h2 class="font-ShadowsIntoLight text-right">&lt;/h1&gt;</h2>
       </div>
-      <!-- Intro -->
-      <div class="flex gap-10 items-start justify-center">
+      <!-- Intro + Photo -->
+      <div class="flex gap-10 items-start justify-center w-3/4">
         <!-- Photo -->
         <div class="flex flex-col gap-5">
           <h2 class="font-ShadowsIntoLight text-left">&lt;img</h2>
@@ -116,10 +116,18 @@
           <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
         </div>
         <!-- Intro Text -->
-        <div class="flex flex-col flex-1 w-full justify-center gap-5">
+        <div class="flex flex-col justify-center gap-5 max-w-[65%]">
           <h2 class="font-ShadowsIntoLight text-left">&lt;p&gt;</h2>
-          <p id="intro" class="font-RedHat"></p>
+          <p id="intro" class="font-RedHat font-semibold"></p>
           <h2 class="font-ShadowsIntoLight text-right">&lt;/p&gt;</h2>
+          <!-- CTA -->
+          <h2 class="font-ShadowsIntoLight text-left">&lt;button&gt;</h2>
+          <button
+            class="py-5 bg-primary-text hover:bg-primary-textHover text-slate-900 font-semibold rounded-lg"
+          >
+            Send a message!
+          </button>
+          <h2 class="font-ShadowsIntoLight text-right">&lt;/button&gt;</h2>
         </div>
       </div>
     </div>

@@ -12,8 +12,6 @@ module.exports = {
     },
     fontFamily: {
       RedHat: ["Red Hat Display", "sans-serif"],
-      LeagueGothic: ["League Gothic", "sans-serif"],
-      LeagueSpartan: ["League Spartan", "sans-serif"],
       ShadowsIntoLight: ["Shadows Into Light", "cursive"],
       AntonSC: ["Anton SC", "sans-serif"],
     },

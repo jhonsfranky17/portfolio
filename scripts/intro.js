@@ -12,7 +12,7 @@ function autoType() {
   }
   i++;
 
-  setTimeout(autoType, 0);
+  setTimeout(autoType, 20);
 }
 autoType();
 //  I excel in crafting intuitive designs for websites and apps, aiding businesses in enhancing user experience, improving key metrics, and achieving digital leadership.

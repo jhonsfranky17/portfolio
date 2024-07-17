@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,116 +28,145 @@
   <body>
     <!-- Wrapper -->
     <div
-      class="min-h-dvh w-full bg-primary-black text-primary-text font-RedHat flex flex-col px-20 items-center"
+      class="min-h-dvh w-full bg-primary-black text-primary-text font-RedHat flex flex-col px-20 items-center gap-20"
     >
-      <!-- NavBar + Navtags -->
-      <div class="flex flex-col w-full">
-        <h2 class="font-ShadowsIntoLight">&lt;nav&gt;</h2>
-        <nav
-          class="w-full flex items-center justify-between py-2 text-sm font-semibold"
-        >
-          <div class="flex items-center gap-3">
-            <div class="w-20 h-10 rounded-r-full bg-primary-text"></div>
-            <h3 class="">Franklin <br />Johnson</h3>
-          </div>
-          <!-- nav links -->
-          <div class="flex items-center gap-7">
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#about"
-              >About</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#skills"
-              >Skills</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#work"
-              >Work</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#experience"
-              >Experience</a
-            >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#contact"
-              >Contact</a
-            >
-          </div>
-          <!-- social links -->
-          <div class="flex gap-3 items-center">
-            <a
-              class="transition hover:-translate-y-5 duration-1000"
-              href="https://www.linkedin.com/in/franklin-jetty-johnson-a02961170/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="./assets/social/icons8-linkedin.svg" alt="linkedin"
-            /></a>
-            <a
-              class="transition hover:-translate-y-5 duration-1000"
-              href="https://github.com/jhonsfranky17?tab=overview&from=2024-07-01&to=2024-07-12"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="./assets/social/icons8-github.svg" alt="github"
-            /></a>
-            <a
-              class="transition hover:-translate-y-5 duration-1000"
-              href="https://www.instagram.com/jhonsfranky17/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><img src="./assets/social/icons8-instagram.svg" alt="instagram"
-            /></a>
-          </div>
-        </nav>
-        <h2 class="text-right font-ShadowsIntoLight">&lt;/nav&gt;</h2>
-      </div>
-      <!-- Hero + Herotags -->
-      <div class="flex flex-col w-full">
-        <h2 class="font-ShadowsIntoLight">&lt;h1&gt;</h2>
-        <h1 class="text-[13rem] font-AntonSC whitespace-nowrap">
-          FULL STACK DEVELOPER
-        </h1>
-        <h2 class="font-ShadowsIntoLight text-right">&lt;/h1&gt;</h2>
-      </div>
-      <!-- Intro + Photo -->
-      <div class="flex gap-10 items-start justify-center w-3/4">
-        <!-- Photo -->
-        <div class="flex flex-col gap-5">
-          <h2 class="font-ShadowsIntoLight text-left">&lt;img</h2>
-          <img
-            src="./assets/photo.png"
-            alt=""
-            class="h-96 rounded-full object-cover"
-          />
-          <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
-        </div>
-        <!-- Intro Text -->
-        <div class="flex flex-col justify-center gap-[10px] max-w-[65%]">
-          <h2 class="font-ShadowsIntoLight text-left">&lt;p&gt;</h2>
-          <p id="intro" class="font-RedHat"></p>
-          <h2 class="font-ShadowsIntoLight text-right">&lt;/p&gt;</h2>
-          <!-- CTA -->
-          <h2 class="font-ShadowsIntoLight text-left">&lt;button&gt;</h2>
-          <button
-            class="py-5 bg-primary-text hover:bg-primary-textHover text-slate-900 font-semibold rounded-lg"
+      <!-- First Section -->
+      <div class="h-dvh flex flex-col items-center">
+        <!-- NavBar + Navtags -->
+        <div class="flex flex-col w-full">
+          <h2 class="font-ShadowsIntoLight">&lt;nav&gt;</h2>
+          <nav
+            class="w-full flex items-center justify-between py-2 text-sm font-semibold"
           >
-            Send a message!
-          </button>
-          <h2 class="font-ShadowsIntoLight text-right">&lt;/button&gt;</h2>
-          <h2 class="font-ShadowsIntoLight text-left">&lt;hr</h2>
-          <hr class="border-primary-text" />
-          <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
-          <h2 class="font-ShadowsIntoLight text-left">&lt;section&gt;</h2>
-          <div class="flex justify-between">
-            <h2 class="text-xs">Franklin Jetty Johnson</h2>
-            <h2 class="text-xs">+91 9072269490</h2>
-            <h2 class="text-xs">franklinjettyjohnson6@gmail.com</h2>
+            <div class="flex items-center gap-3">
+              <div class="w-20 h-10 rounded-r-full bg-primary-text"></div>
+              <h3 class="">Franklin <br />Johnson</h3>
+            </div>
+            <!-- nav links -->
+            <div class="flex items-center gap-7">
+              <a
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                href="#about"
+                >About</a
+              >
+              <a
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                href="#skills"
+                >Skills</a
+              >
+              <a
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                href="#work"
+                >Work</a
+              >
+              <a
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                href="#experience"
+                >Experience</a
+              >
+              <a
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                href="#contact"
+                >Contact</a
+              >
+            </div>
+            <!-- social links -->
+            <div class="flex gap-3 items-center">
+              <a
+                class="transition hover:-translate-y-5 duration-1000"
+                href="https://www.linkedin.com/in/franklin-jetty-johnson-a02961170/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/social/icons8-linkedin.svg" alt="linkedin"
+              /></a>
+              <a
+                class="transition hover:-translate-y-5 duration-1000"
+                href="https://github.com/jhonsfranky17?tab=overview&from=2024-07-01&to=2024-07-12"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./assets/social/icons8-github.svg" alt="github"
+              /></a>
+              <a
+                class="transition hover:-translate-y-5 duration-1000"
+                href="https://www.instagram.com/jhonsfranky17/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="./assets/social/icons8-instagram.svg"
+                  alt="instagram"
+              /></a>
+            </div>
+          </nav>
+          <h2 class="text-right font-ShadowsIntoLight">&lt;/nav&gt;</h2>
+        </div>
+        <!-- Hero + Herotags -->
+        <div class="flex flex-col w-full">
+          <h2 class="font-ShadowsIntoLight">&lt;h1&gt;</h2>
+          <h1 class="text-[13rem] font-AntonSC whitespace-nowrap">
+            FULL STACK DEVELOPER
+          </h1>
+          <h2 class="font-ShadowsIntoLight text-right">&lt;/h1&gt;</h2>
+        </div>
+        <!-- Intro + Photo -->
+        <div class="flex gap-10 items-start justify-center w-3/4">
+          <!-- Photo -->
+          <div class="flex flex-col gap-5">
+            <h2 class="font-ShadowsIntoLight text-left">&lt;img</h2>
+            <img
+              src="./assets/photo.png"
+              alt=""
+              class="h-96 rounded-full object-cover"
+            />
+            <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
           </div>
-          <h2 class="font-ShadowsIntoLight text-right">&lt;/section&gt;</h2>
+          <!-- Intro Text -->
+          <div class="flex flex-col justify-center gap-[10px] max-w-[65%]">
+            <h2 class="font-ShadowsIntoLight text-left">&lt;p&gt;</h2>
+            <p id="intro" class="font-RedHat"></p>
+            <h2 class="font-ShadowsIntoLight text-right">&lt;/p&gt;</h2>
+            <!-- CTA -->
+            <h2 class="font-ShadowsIntoLight text-left">&lt;button&gt;</h2>
+            <button
+              class="py-5 bg-primary-text hover:bg-primary-textHover text-slate-900 font-extrabold rounded-lg"
+            >
+              Send a message!
+            </button>
+            <h2 class="font-ShadowsIntoLight text-right">&lt;/button&gt;</h2>
+            <h2 class="font-ShadowsIntoLight text-left">&lt;hr</h2>
+            <hr class="border-primary-text" />
+            <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
+            <h2 class="font-ShadowsIntoLight text-left">&lt;section&gt;</h2>
+            <div class="flex justify-between">
+              <h2 class="text-xs">Franklin Jetty Johnson</h2>
+              <h2 class="text-xs">+91 9072269490</h2>
+              <h2 class="text-xs">franklinjettyjohnson6@gmail.com</h2>
+            </div>
+            <h2 class="font-ShadowsIntoLight text-right">&lt;/section&gt;</h2>
+          </div>
+        </div>
+      </div>
+      <!-- Second Section -->
+      <div class="h-dvh w-3/4 flex flex-col gap-10">
+        <!-- Skills Heading -->
+        <div id="skills" class="flex flex-col w-1/2">
+          <h2 class="font-ShadowsIntoLight text-left">&lt;h2&gt;</h2>
+          <h2 class="font-AntonSC text-9xl text-center">skills</h2>
+          <h2 class="font-ShadowsIntoLight text-right">&lt;/h2&gt;</h2>
+        </div>
+        <!-- Skills Content -->
+        <div class="flex justify-end">
+          <div class="flex flex-col w-1/2 gap-5">
+            <h2 class="font-ShadowsIntoLight text-left">&lt;p&gt;</h2>
+            <p>
+              I specialize in crafting dynamic and responsive websites utilizing
+              a comprehensive suite of technologies. My skill set encompasses
+              front-end development with React and Tailwind CSS, alongside
+              back-end expertise in Node.js and Express. I am adept at managing
+              both relational and non-relational databases, including MySQL and
+              MongoDB, to deliver robust and scalable web solutions.
+            </p>
+            <h2 class="font-ShadowsIntoLight text-right">&lt;/p&gt;</h2>
+          </div>
         </div>
       </div>
     </div>

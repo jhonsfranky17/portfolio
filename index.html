@@ -17,13 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
       rel="stylesheet"
     />
-    <!-- <audio autoplay>
+    <audio autoplay>
       <source
-        src="./assets/PULKODIYIL THOOMANI COVER TAKE OFF INFINITY BAND.mp3"
+        src="./assets/free-sad-type-beat-empty-world-quot-194595.mp3"
         type="audio/mpeg"
       />
       Your browser does not support the audio element.
-    </audio> -->
+    </audio>
   </head>
   <body>
     <!-- Wrapper -->
@@ -44,11 +44,6 @@
             </div>
             <!-- nav links -->
             <div class="flex items-center gap-7">
-              <a
-                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-                href="#about"
-                >About</a
-              >
               <a
                 class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
                 href="#skills"
@@ -146,7 +141,7 @@
         </div>
       </div>
       <!-- Second Section -->
-      <div class="h-dvh w-3/4 flex flex-col gap-10">
+      <div class="h-dvh w-3/4 flex flex-col gap-5">
         <!-- Skills Heading -->
         <div id="skills" class="flex flex-col w-1/2">
           <h2 class="font-ShadowsIntoLight text-left">&lt;h2&gt;</h2>
@@ -169,21 +164,37 @@
           </div>
         </div>
         <!-- Logos -->
+        <!-- Container -->
         <div class="flex flex-col gap-5">
           <h2 class="font-ShadowsIntoLight text-left">&lt;figure&gt;</h2>
-          <figure class="flex gap-10 justify-center items-center">
-            <button id="less-than" class="text-5xl">&lt;</button>
-            <div class="flex flex-col gap-3 items-center">
-              <img
-                src="./assets/logos/icons8-react-native.svg"
-                alt="react"
-                id="logo"
-                class="w-52"
-              />
-              <h3 id="name">React</h3>
-            </div>
-            <button id="greater-than" class="text-5xl">&gt;</button>
-          </figure>
+          <!-- Logo + Buttons + Caption -->
+          <div class="flex justify-center items-center">
+            <figure
+              class="flex flex-col gap-10 justify-center items-center w-fit"
+            >
+              <div class="flex gap-10 justify-center items-center">
+                <button id="less-than" class="text-xl">&lt;</button>
+                <img
+                  src="./assets/logos/icons8-react-native.svg"
+                  alt="react"
+                  id="logo"
+                  class="w-72"
+                />
+                <button id="greater-than" class="text-xl">&gt;</button>
+              </div>
+              <div class="flex flex-col gap-3 w-full justify-center">
+                <h2 class="font-ShadowsIntoLight text-left">
+                  &lt;figcaption&gt;
+                </h2>
+                <figcaption id="name" class="text-center text-lg font-bold">
+                  React
+                </figcaption>
+                <h2 class="font-ShadowsIntoLight text-right">
+                  &lt;/figcaption&gt;
+                </h2>
+              </div>
+            </figure>
+          </div>
           <h2 class="font-ShadowsIntoLight text-right">&lt;/figure&gt;</h2>
         </div>
       </div>

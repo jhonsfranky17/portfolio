@@ -58,6 +58,7 @@ const logos = [
 ];
 
 const logo = document.getElementById("logo");
+const name = document.getElementById("name");
 const totalLogos = logos.length;
 let index = 0;
 
@@ -79,4 +80,14 @@ document.getElementById("greater-than").addEventListener("click", () => {
 
 function updateCarousel() {
   logo.src = logos[index].path;
+  name.innerHTML = logos[index].name;
 }
+
+setInterval(() => {
+  logo.src = logos[index].path;
+  name.innerHTML = logos[index].name;
+  index++;
+  if (index >= totalLogos) {
+    index = 0;
+  }
+}, 1000);

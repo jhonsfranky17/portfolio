@@ -8,6 +8,10 @@ const logos = [
     name: "Express.js",
   },
   {
+    path: "./assets/logos/icons8-java.svg",
+    name: "Java",
+  },
+  {
     path: "./assets/logos/icons8-mysql.svg",
     name: "MySQL",
   },
@@ -54,6 +58,10 @@ const logos = [
   {
     path: "./assets/logos/icons8-react-native.svg",
     name: "React",
+  },
+  {
+    path: "./assets/logos/icons8-react-native.svg",
+    name: "React Native",
   },
 ];
 

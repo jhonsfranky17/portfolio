@@ -18,6 +18,33 @@
       href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      .fade-in {
+        animation: fadeIn 1s forwards;
+      }
+
+      .fade-out {
+        animation: fadeOut 1s forwards;
+      }
+    </style>
   </head>
   <body>
     <!-- Wrapper -->
@@ -173,12 +200,7 @@
             >
               <div class="flex gap-10 justify-center items-center">
                 <button id="less-than" class="text-xl">&lt;</button>
-                <img
-                  src="./assets/logos/icons8-react-native.svg"
-                  alt="react"
-                  id="logo"
-                  class="2xl:w-52 xl:w-40"
-                />
+                <img src="" alt="" id="logo" class="2xl:w-52 xl:w-40" />
                 <button id="greater-than" class="text-xl">&gt;</button>
               </div>
               <div
@@ -190,9 +212,7 @@
                 <figcaption
                   id="name"
                   class="text-center 2xl:text-lg xl:text-base font-bold"
-                >
-                  React
-                </figcaption>
+                ></figcaption>
                 <h2 class="font-ShadowsIntoLight text-right">
                   &lt;/figcaption&gt;
                 </h2>

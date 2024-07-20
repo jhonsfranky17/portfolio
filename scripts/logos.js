@@ -1,5 +1,10 @@
 const logos = [
   {
+    path: "./assets/logos/icons8-react-native.svg",
+    name: "React",
+  },
+
+  {
     path: "./assets/logos/icons8-node-js.svg",
     name: "Node.js",
   },
@@ -26,6 +31,10 @@ const logos = [
   {
     path: "./assets/logos/icons8-tailwind-css.svg",
     name: "Tailwind CSS",
+  },
+  {
+    path: "./assets/logos/icons8-react-native.svg",
+    name: "React Native",
   },
   {
     path: "./assets/logos/fortinet-svgrepo-com.svg",
@@ -55,14 +64,6 @@ const logos = [
     path: "./assets/logos/icons8-html.svg",
     name: "HTML",
   },
-  {
-    path: "./assets/logos/icons8-react-native.svg",
-    name: "React",
-  },
-  {
-    path: "./assets/logos/icons8-react-native.svg",
-    name: "React Native",
-  },
 ];
 
 const logo = document.getElementById("logo");
@@ -87,15 +88,25 @@ document.getElementById("greater-than").addEventListener("click", () => {
 });
 
 function updateCarousel() {
-  logo.src = logos[index].path;
-  name.innerHTML = logos[index].name;
+  logo.classList.add("fade-out");
+  setTimeout(() => {
+    logo.src = logos[index].path;
+    name.innerHTML = logos[index].name;
+    logo.classList.remove("fade-out");
+    logo.classList.add("fade-in");
+  }, 1000);
 }
 
 setInterval(() => {
-  logo.src = logos[index].path;
-  name.innerHTML = logos[index].name;
   index++;
   if (index >= totalLogos) {
     index = 0;
   }
-}, 1000);
+  updateCarousel();
+}, 2000);
+
+//Initialize the first logo
+logo.src = logos[index].path;
+name.innerHTML = logos[index].name;
+logo.classList.remove("opacity-0");
+logo.classList.add("fade-in");

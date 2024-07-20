@@ -22,10 +22,10 @@
   <body>
     <!-- Wrapper -->
     <div
-      class="min-h-dvh w-full bg-primary-black text-primary-text font-RedHat flex flex-col px-20 items-center gap-20"
+      class="min-h-dvh w-full bg-primary-black text-primary-text font-RedHat flex flex-col 2xl:px-20 xl:px-10 items-center gap-20"
     >
       <!-- Landing Section -->
-      <div class="h-dvh flex flex-col items-center">
+      <div class="flex flex-col items-center xl:gap-5">
         <!-- NavBar  -->
         <div class="flex flex-col w-full">
           <h2 class="font-ShadowsIntoLight">&lt;nav&gt;</h2>
@@ -34,27 +34,27 @@
           >
             <div class="flex items-center gap-3">
               <div class="w-20 h-10 rounded-r-full bg-primary-text"></div>
-              <h3 class="">Franklin <br />Johnson</h3>
+              <h3 class="xl:text-sm 2xl:text-base">Franklin <br />Johnson</h3>
             </div>
             <!-- Nav Links -->
             <div class="flex items-center gap-7">
               <a
-                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full xl:text-sm 2xl:text-base"
                 href="#skills"
                 >Skills</a
               >
               <a
-                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full xl:text-sm 2xl:text-base"
                 href="#works"
                 >Works</a
               >
               <a
-                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full xl:text-sm 2xl:text-base"
                 href="#experience"
                 >Experience</a
               >
               <a
-                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
+                class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full xl:text-sm 2xl:text-base"
                 href="#contact"
                 >Contact</a
               >
@@ -91,7 +91,9 @@
         <!-- Hero Section -->
         <div class="flex flex-col w-full">
           <h2 class="font-ShadowsIntoLight">&lt;h1&gt;</h2>
-          <h1 class="text-[13rem] font-AntonSC whitespace-nowrap">
+          <h1
+            class="2xl:text-[13rem] xl:text-9xl text-center font-AntonSC whitespace-nowrap"
+          >
             FULL STACK DEVELOPER
           </h1>
           <h2 class="font-ShadowsIntoLight text-right">&lt;/h1&gt;</h2>
@@ -104,20 +106,22 @@
             <img
               src="./assets/photo.png"
               alt=""
-              class="h-96 rounded-full object-cover"
+              class="2xl:h-96 xl:h-80 rounded-full object-cover"
             />
             <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
           </div>
           <!-- Intro Text -->
-          <div class="flex flex-col justify-center gap-[10px] max-w-[65%]">
+          <div
+            class="flex flex-col justify-center 2xl:gap-[10px] xl:gap-[6px] 2xl:max-w-[65%] xl:max-w-[60%]"
+          >
             <h2 class="font-ShadowsIntoLight text-left">&lt;p&gt;</h2>
-            <p id="intro" class="font-RedHat"></p>
+            <p id="intro" class="font-RedHat xl:text-sm 2xl:text-base"></p>
             <h2 class="font-ShadowsIntoLight text-right">&lt;/p&gt;</h2>
             <!-- CTA -->
             <h2 class="font-ShadowsIntoLight text-left">&lt;button&gt;</h2>
             <a href="mailto:franklinjettyjohnson6@gmail.com" class="w-full">
               <button
-                class="py-5 bg-primary-text hover:bg-primary-textHover text-slate-900 font-extrabold rounded-lg w-full"
+                class="2xl:py-5 xl:py-3 bg-primary-text hover:bg-primary-textHover text-slate-900 font-extrabold rounded-lg w-full"
               >
                 Send a message!
               </button>
@@ -137,7 +141,7 @@
         </div>
       </div>
       <!-- Skills Section -->
-      <div class="h-dvh w-3/4 flex flex-col gap-5">
+      <div class="w-3/4 flex flex-col gap-5">
         <!-- Skills Heading -->
         <div id="skills" class="flex flex-col w-1/2">
           <h2 class="font-ShadowsIntoLight text-left">&lt;h2&gt;</h2>
@@ -146,9 +150,9 @@
         </div>
         <!-- Skills Content -->
         <div class="flex justify-end">
-          <div class="flex flex-col w-1/2 gap-5">
+          <div class="flex flex-col w-1/2 2xl:gap-5 xl:gap-3">
             <h2 class="font-ShadowsIntoLight text-left">&lt;p&gt;</h2>
-            <p>
+            <p class="2xl:text-base xl:text-sm">
               I specialize in crafting dynamic and responsive websites utilizing
               a comprehensive suite of technologies. My skill set encompasses
               front-end development with React and Tailwind CSS, alongside
@@ -160,7 +164,7 @@
           </div>
         </div>
         <!-- Logo Wrapper -->
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col 2xl:gap-5 xl:gap-2">
           <h2 class="font-ShadowsIntoLight text-left">&lt;figure&gt;</h2>
           <!-- Logo + Buttons + Caption -->
           <div class="flex justify-center items-center">
@@ -173,15 +177,20 @@
                   src="./assets/logos/icons8-react-native.svg"
                   alt="react"
                   id="logo"
-                  class="w-52"
+                  class="2xl:w-52 xl:w-40"
                 />
                 <button id="greater-than" class="text-xl">&gt;</button>
               </div>
-              <div class="flex flex-col gap-5 w-full justify-center">
+              <div
+                class="flex flex-col 2xl:gap-5 xl:gap-1 w-full justify-center"
+              >
                 <h2 class="font-ShadowsIntoLight text-left">
                   &lt;figcaption&gt;
                 </h2>
-                <figcaption id="name" class="text-center text-lg font-bold">
+                <figcaption
+                  id="name"
+                  class="text-center 2xl:text-lg xl:text-base font-bold"
+                >
                   React
                 </figcaption>
                 <h2 class="font-ShadowsIntoLight text-right">
@@ -204,9 +213,9 @@
           </div>
         </div>
         <!-- Works Content -->
-        <div class="flex flex-col w-1/2 gap-5">
+        <div class="flex flex-col w-1/2 2xl:gap-5 xl:gap-3">
           <h2 class="font-ShadowsIntoLight text-left">&lt;p&gt;</h2>
-          <p>
+          <p class="2xl:text-base xl:text-sm">
             Explore a selection of websites I’ve developed independently and
             with BrosCode, my esteemed web development freelancing team. Each
             site reflects my dedication to creating innovative, responsive, and
@@ -217,19 +226,19 @@
           <h2 class="font-ShadowsIntoLight text-right">&lt;/p&gt;</h2>
         </div>
         <!-- Works -->
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col 2xl:gap-5 xl:gap-3">
           <!-- hr -->
           <h2 class="font-ShadowsIntoLight text-left">&lt;hr</h2>
           <hr class="border-primary-text" />
           <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
           <!-- Alanis -->
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col 2xl:gap-5 xl:gap-3">
             <h2 class="font-ShadowsIntoLight text-left">&lt;div&gt;</h2>
             <div class="flex gap-20 px-14 justify-center">
               <h2 class="font-bold">2024</h2>
-              <div class="flex flex-col gap-5">
+              <div class="flex flex-col 2xl:gap-5 xl:gap-3">
                 <h2 class="font-bold">Alanis Beauty Parlour</h2>
-                <p>
+                <p class="2xl:text-base xl:text-sm">
                   Revamped the Alanis Beauty Parlour website to feature a
                   modern, sleek design with a user-friendly interface, enhanced
                   navigation, and updated visuals, creating a more engaging and
@@ -237,7 +246,7 @@
                 </p>
               </div>
               <div class="flex items-center justify-center">
-                <button class="border px-14 py-2 py rounded-full">
+                <button class="border 2xl:px-14 xl:px-10 py-2 py rounded-full">
                   <a
                     href="https://alanisbeautyparlour.com/home"
                     target="_blank"
@@ -255,13 +264,13 @@
           <hr class="border-primary-text" />
           <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
           <!-- Infiniti -->
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col 2xl:gap-5 xl:gap-3">
             <h2 class="font-ShadowsIntoLight text-left">&lt;div&gt;</h2>
             <div class="flex gap-20 px-14 justify-center">
               <h2 class="font-bold">2024</h2>
-              <div class="flex flex-col gap-5">
+              <div class="flex flex-col 2xl:gap-5 xl:gap-3">
                 <h2 class="font-bold">Infiniti</h2>
-                <p>
+                <p class="2xl:text-base xl:text-sm">
                   Designed and developed a landing page for Infiniti, a real
                   estate website, highlighting various housing projects. The
                   page features a clean, modern design that presents each
@@ -271,7 +280,7 @@
                 </p>
               </div>
               <div class="flex items-center justify-center">
-                <button class="border px-14 py-2 py rounded-full">
+                <button class="border 2xl:px-14 xl:px-10 py-2 py rounded-full">
                   <a
                     href="https://jhonsfranky17.github.io/infiniti/"
                     target="_blank"
@@ -289,13 +298,13 @@
           <hr class="border-primary-text" />
           <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
           <!-- RPS -->
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col 2xl:gap-5 xl:gap-3">
             <h2 class="font-ShadowsIntoLight text-left">&lt;div&gt;</h2>
             <div class="flex gap-20 px-14 justify-center">
               <h2 class="font-bold">2023</h2>
-              <div class="flex flex-col gap-5">
+              <div class="flex flex-col 2xl:gap-5 xl:gap-3">
                 <h2 class="font-bold">Rock Paper Scissors</h2>
-                <p>
+                <p class="2xl:text-base xl:text-sm">
                   Developed a nostalgic Rock Paper Scissors game that combines
                   classic gameplay with a modern, interactive interface. This
                   project features a fun and familiar experience to users while
@@ -303,7 +312,7 @@
                 </p>
               </div>
               <div class="flex items-center justify-center">
-                <button class="border px-14 py-2 py rounded-full">
+                <button class="border 2xl:px-14 xl:px-10 py-2 py rounded-full">
                   <a
                     href="https://rps-react-ashen.vercel.app/"
                     target="_blank"
@@ -321,13 +330,13 @@
           <hr class="border-primary-text" />
           <h2 class="font-ShadowsIntoLight text-right">/&gt;</h2>
           <!-- Cynderhost -->
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col 2xl:gap-5 xl:gap-3">
             <h2 class="font-ShadowsIntoLight text-left">&lt;div&gt;</h2>
             <div class="flex gap-20 px-14 justify-center">
               <h2 class="font-bold">2023</h2>
-              <div class="flex flex-col gap-5">
+              <div class="flex flex-col 2xl:gap-5 xl:gap-3">
                 <h2 class="font-bold">CynderHost</h2>
-                <p>
+                <p class="2xl:text-base xl:text-sm">
                   Designed and developed a landing page for CynderHost, a web
                   hosting service, featuring a detailed comparison graph of
                   speed performance against other providers. The page highlights
@@ -338,7 +347,7 @@
                 </p>
               </div>
               <div class="flex items-center justify-center">
-                <button class="border px-14 py-2 py rounded-full">
+                <button class="border 2xl:px-14 xl:px-10 py-2 py rounded-full">
                   <a
                     href="https://jhonsfranky17.github.io/cynderhost/"
                     target="_blank"
@@ -358,7 +367,7 @@
         </div>
       </div>
       <!-- Experience + Contact Wrapper-->
-      <div class="h-dvh w-3/4 flex flex-col gap-5">
+      <div class="w-3/4 flex flex-col gap-5">
         <!-- Experience Heading -->
         <div id="experience" class="flex flex-col w-1/2">
           <h2 class="font-ShadowsIntoLight text-left">&lt;h2&gt;</h2>

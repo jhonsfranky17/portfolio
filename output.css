@@ -610,6 +610,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -741,6 +745,14 @@ video {
     width: 75%;
   }
 
+  .lg\:w-40 {
+    width: 10rem;
+  }
+
+  .lg\:w-36 {
+    width: 9rem;
+  }
+
   .lg\:max-w-\[50\%\] {
     max-width: 50%;
   }
@@ -765,6 +777,10 @@ video {
     gap: 6px;
   }
 
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -778,6 +794,11 @@ video {
   .lg\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .lg\:text-\[7rem\] {
@@ -918,5 +939,9 @@ video {
   .\32xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-\[10rem\] {
+    font-size: 10rem;
   }
 }

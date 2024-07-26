@@ -504,12 +504,6 @@ video {
 .relative {
   position: relative;
 }
-.top-\[12px\] {
-  top: 12px;
-}
-.m-\[25px\] {
-  margin: 25px;
-}
 .block {
   display: block;
 }
@@ -629,34 +623,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(238 229 224 / var(--tw-bg-opacity));
 }
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-.bg-green-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.p-\[5px\] {
-  padding: 5px;
-}
-.p-2 {
-  padding: 0.5rem;
-}
-.p-1 {
-  padding: 0.25rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -673,14 +642,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-.px-\[5px\] {
-  padding-left: 5px;
-  padding-right: 5px;
 }
 .text-left {
   text-align: left;
@@ -700,10 +661,6 @@ video {
 .font-ShadowsIntoLight {
   font-family: Shadows Into Light, cursive;
 }
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -719,6 +676,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -1019,10 +980,6 @@ video {
 
   .\32xl\:max-w-\[55\%\] {
     max-width: 55%;
-  }
-
-  .\32xl\:gap-10 {
-    gap: 2.5rem;
   }
 
   .\32xl\:gap-5 {

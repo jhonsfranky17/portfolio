@@ -44,6 +44,20 @@
       .fade-out {
         animation: fadeOut 1s forwards;
       }
+      #menu-items {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #menu-items.translate-x-0 {
+        transform: translateX(0);
+      }
+
+      #menu-items.translate-x-full {
+        transform: translateX(100%);
+      }
+      .no-scroll {
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
@@ -73,52 +87,53 @@
           <h2 class="text-right font-ShadowsIntoLight">&lt;/nav&gt;</h2>
         </nav>
         <!-- Menu Items -->
-        <div id="menu-items" class="hidden lg:hidden w-full">
-          <div class="flex flex-col items-center justify-center gap-5 w-full">
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#skills"
+        <div
+          id="menu-items"
+          class="lg:hidden p-5 fixed top-0 right-0 h-dvh w-3/4 bg-primary-textHover transform translate-x-full duration-300 ease-in-out gap-10"
+        >
+          <button id="close-menu" class="w-full">
+            <img src="./assets/icons8-right-arrow-48.png" alt="close-menu" />
+          </button>
+          <div class="flex flex-col justify-center gap-5 w-full">
+            <a class="cursor-pointer text-black font-bold" href="#skills"
               >Skills</a
             >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#works"
+            <a class="cursor-pointer text-black font-bold" href="#works"
               >Works</a
             >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#experience"
+            <a class="cursor-pointer text-black font-bold" href="#experience"
               >Experience</a
             >
-            <a
-              class="cursor-pointer after:w-0 after:h-[2px] after:bg-primary-text after:block lg:after:m-auto after:duration-500 hover:after:w-0 lg:hover:after:w-full"
-              href="#contact"
+            <a class="cursor-pointer text-black font-bold" href="#contact"
               >Contact</a
             >
-            <div class="flex gap-3 items-center">
-              <a
-                class="transition hover:-translate-y-5 duration-1000"
-                href="https://www.linkedin.com/in/franklin-jetty-johnson-a02961170/"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img src="./assets/social/icons8-linkedin.svg" alt="linkedin"
-              /></a>
-              <a
-                class="transition hover:-translate-y-5 duration-1000"
-                href="https://github.com/jhonsfranky17?tab=overview&from=2024-07-01&to=2024-07-12"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img src="./assets/social/icons8-github.svg" alt="github"
-              /></a>
-              <a
-                class="transition hover:-translate-y-5 duration-1000"
-                href="https://www.instagram.com/jhonsfranky17/"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><img
-                  src="./assets/social/icons8-instagram.svg"
-                  alt="instagram"
-              /></a>
+            <div
+              class="w-full flex justify-center items-center bg-primary-black py-2"
+            >
+              <div class="flex gap-3 items-center">
+                <a
+                  href="https://www.linkedin.com/in/franklin-jetty-johnson-a02961170/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./assets/social/icons8-linkedin.svg"
+                    alt="linkedin"
+                /></a>
+                <a
+                  href="https://github.com/jhonsfranky17?tab=overview&from=2024-07-01&to=2024-07-12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img src="./assets/social/icons8-github.svg" alt="github"
+                /></a>
+                <a
+                  href="https://www.instagram.com/jhonsfranky17/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./assets/social/icons8-instagram.svg"
+                    alt="instagram"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
